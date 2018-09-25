@@ -4,7 +4,7 @@ The source code reveals that it's running a shell script using `shell_exec()`, w
 ```sh
 | ls -a . #
 ```
-*The `|` is the pipe operator in bash, which takes the output of the previous command and uses it as input for this command. In this case it's not really necessary, meaning that it's also possibly to use `&&` or `;`.
+*The `|` is the pipe operator in bash, which takes the output of the previous command and uses it as input for this command. In this case it's not really necessary, meaning that it's also possible to use `&&` or `;`.
 The `#` is comment in bash, which means to inore the rest of the code, that is, `dictionary.txt`, it's not really necessary, but it's good to keep it clean.*
 
 revealed that there's a filed called `.htpasswd`, which I then modified it to `cat` out the content of the file, which had this.

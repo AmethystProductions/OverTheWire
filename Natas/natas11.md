@@ -1,6 +1,6 @@
 # Natas 11
 
-Was pretty stump on this one. The encryption wasn't exactly hard once you figure it out, but definitely took me a long time. 
+Was pretty stumped on this one. The encryption wasn't exactly hard once you figure it out, but definitely took me a long time. 
 
 ```php
 function xor_encrypt($in) {
